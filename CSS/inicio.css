@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Coming+Soon&family=Playwrite+AR:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("C:/Users/renzo/Documents/PROYECTOS/HORA_RIO/recursos/background_start.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*AGREGAR ANIMACIO DONDE EL FONDO DE OSCURO PASA A NORMAL*/
+
+p{
+    font-family: "Comic Neue", cursive;
+    font-size: 24px;
+}
+
+#title{
+    background-color: rgb(156, 119, 44);
+    font-size: 48px;
+    color: #DAD0C4;
+    margin: 20px 4px;
+    border: 4px dashed rgb(54, 30, 9);
+    border-radius: 100px;
+    align-content: center;
+    width: 500px;
+    height: 100px;
+    animation: titleani 2000ms ease-in 100ms 1 alternate forwards;
+    display: inline-block;
+}
+
+@keyframes titleani{
+    0%{
+        width: 500px;
+        height: 100px;
+    }
+    100%{
+        width: 300px;
+        height: 70px;
+        font-size: 30px;
+    }
+}
+
+#container{
+    position: relative;
+    top: 40px;
+    height: 540px;
+}
+
+.thanks{
+    background-color: black;
+    color: darkred;
+    background-position: 50%;
+    padding: 70px;
+    width: 420px;
+    height: 500px;
+    border: 4px solid black;
+    border-radius: 70px;
+    display: inline-block;
+    position: absolute;
+    left: 50px;
+    text-align: center;
+    animation: thanks 1000ms ease-out 500ms 1 alternate forwards;
+    box-sizing: border-box;
+}
+
+@keyframes thanks {
+    0%{
+        left: -50px;
+    }
+    100%{
+        
+    }
+}
+
+.thanks:hover{
+    background: linear-gradient( to top, rgba(0, 0, 0, 0.347), rgba(0, 0, 0, 0.429)), url("C:/Users/renzo/Documents/PROYECTOS/HORA_RIO/recursos/ausuna_ends.jpg");
+    color: rgb(10, 71, 71);
+    font-weight: bolder;
+}
+
+#conditions{
+    background-color: aquamarine;
+    width: 420px;
+    height: 500px;
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    text-align: center;
+    animation: conditions 1000ms ease-in-out 500ms 1 alternate forwards;
+}
+
+@keyframes conditions {
+    0%{
+        color: white;
+        right:  -50px;
+    }
+    100%{
+        color:darkslategrey;
+    }
+}
