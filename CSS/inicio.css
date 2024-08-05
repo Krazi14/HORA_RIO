@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Coming+Soon&family=Playwrite+AR:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root{
+    --elemento: center;
+}
+
 body{
     
     background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("C:/Users/renzo/Documents/PROYECTOS/HORA_RIO/recursos/background_start.png");
@@ -49,6 +53,7 @@ p{
 .thanks{
     background-color: black;
     color: darkred;
+    font-weight: bold;
     background-position: 50%;
     padding: 70px;
     width: 420px;
@@ -61,6 +66,8 @@ p{
     text-align: center;
     animation: thanks 1000ms ease-out 500ms 1 alternate forwards;
     box-sizing: border-box;
+    transition-property: background, color;
+    transition-duration: 1000ms;
 }
 
 @keyframes thanks {
@@ -73,13 +80,14 @@ p{
 }
 
 .thanks:hover{
-    background: linear-gradient( to top, rgba(0, 0, 0, 0.347), rgba(0, 0, 0, 0.429)), url("C:/Users/renzo/Documents/PROYECTOS/HORA_RIO/recursos/ausuna_ends.jpg");
+    background: linear-gradient( to top, rgba(255, 255, 255, 0.347), rgba(0, 0, 0, 0.429)), url("C:/Users/renzo/Documents/PROYECTOS/HORA_RIO/recursos/Kisara_background3.jpg");
+    background-position: 40% 50%;
     color: rgb(10, 71, 71);
-    font-weight: bolder;
 }
 
-#conditions{
-    background-color: aquamarine;
+.conditions{
+    background-color: rgb(0, 0, 0);
+    color: darkorange;
     width: 420px;
     height: 500px;
     padding: 70px;
@@ -91,14 +99,134 @@ p{
     text-align: center;
     animation: conditions 1000ms ease-in-out 500ms 1 alternate forwards;
     box-sizing: border-box;
+    transition-property: background, color;
+    transition-duration: 1000ms;
 }
 
 @keyframes conditions {
     0%{
-        color: white;
         right:  -50px;
     }
     100%{
-        color:darkslategrey;
+
     }
+}
+
+/*REDUCIR EL TAMAÑO DE LA IMAGEN*/
+.conditions:hover{
+    background: linear-gradient( to top, rgba(0, 0, 0, 0.347), rgba(255, 255, 255, 0.429)), url("C:/Users/renzo/Documents/PROYECTOS/HORA_RIO/recursos/ausuna_ends.jpg");
+    background-position: 50% 50%;
+    color: brown;
+}
+
+.title_block2{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.social_red_container{
+    color: black;
+    background-image: url("C:/Users/renzo/Documents/PROYECTOS/HORA_RIO/recursos/line_social.jpg");
+    border: 4px solid black;
+    margin: 5% 40%;
+    border-radius: 30px;
+    width: 350px;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 0px 10px;
+}
+
+.FB{
+    height: 60px;
+    display: grid;
+    justify-content: center;
+    align-items: var(--elemento);
+}
+
+.IG{
+    height: 60px;
+    display: grid;
+    justify-content: center;
+    align-items: var(--elemento);
+}
+
+.YT{
+    height: 60px;
+    display: grid;
+    justify-content: center;
+    align-items: var(--elemento);
+}
+
+.GIT{
+    height: 60px;
+    display: grid;
+    justify-content: center;
+    align-items: var(--elemento);
+}
+
+.FB_logo{
+    color: black;
+    
+}
+
+.FB_logo:hover{
+    color: blue;
+    animation: rotateAnimation 2s ease-in-out infinite;
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.IG_logo{
+    color: black;
+    transition: transform 1000ms ease-in;
+}
+
+.IG_logo:hover{
+    color: deeppink;
+    transform: rotate(360deg);
+}
+
+.YT_logo{
+    color: black;
+    transition: transform 1000ms ease-in;
+}
+
+.YT_logo:hover{
+    color: red;
+    transform: rotate(360deg);
+}
+
+.GIT_logo{
+    color: black;
+    transition: transform 1000ms ease-in;
+}
+
+.GIT_logo:hover{
+    color: rgb(101, 23, 179);
+    transform: rotate(360deg);
+}
+
+.enter{
+    background-image: url("C:/Users/renzo/Documents/PROYECTOS/HORA_RIO/recursos/menu_dance-anime.gif");
+    background-position: 40% 50%;
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 90px;
+    width: 170px;
+    height: 170px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
 }
