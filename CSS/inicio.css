@@ -230,3 +230,50 @@ p{
     right: 0;
     bottom: 0;
 }
+
+.entrar{
+    background-color: antiquewhite;
+    background-position: 40% 50%;
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 90px;
+    width: 170px;
+    height: 170px;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transition: width 1000ms ease-in-out;
+}
+
+.entrar:hover{
+    width: 500px;
+}
+
+.check{
+    color: azure;   
+    width: 250px;
+    height: 170px;
+    font-size: 40px;
+    align-content: center;
+    border-radius: 88px;
+    overflow: hidden;
+}
+
+.check:hover{
+    background-color: rgb(101, 23, 23);
+}
+
+#letra{
+    color: black;
+    text-decoration: none;
+    padding: 80px 80px;
+}
+
+#letra:hover{
+    color: chartreuse;
+}
