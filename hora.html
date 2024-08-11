@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/hora_Styles.css">
     <title> FECHA </title>
 </head>
 <body>
+    <nav>
+        <a href="pag_inicio.html"> Regresar </a>
+    </nav>
 
-    <h1> HORA en (PAÍS) </h1>
+    <br>
 
-    <fieldset>
-        <legend id="fecha"></legend>
+    <h1 id="title"> HORA en (PAÍS) </h1>
+
+    <fieldset class="borde">
+        <legend> <p id="fecha"></p></legend>
         <h2 id="hora"></h2>
-    </fieldset>
+    </fieldset> 
+
+    <div id="algo">
+        <p> Aún por añadir mas cosas como la geolocalización, APIS para el clima, etc. </p>
+    </div>
 
     <script src="JS/Hora.js"></script>
 </body>

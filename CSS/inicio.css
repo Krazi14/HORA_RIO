@@ -51,8 +51,8 @@ p{
 }
 
 .thanks{
-    background-color: black;
-    color: darkred;
+    background-color: rgb(118, 68, 27);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     background-position: 50%;
     padding: 70px;
@@ -86,7 +86,7 @@ p{
 }
 
 .conditions{
-    background-color: rgb(0, 0, 0);
+    background-color:  rgb(118, 68, 27);
     color: darkorange;
     width: 420px;
     height: 500px;
